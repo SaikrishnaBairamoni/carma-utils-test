@@ -49,7 +49,7 @@ jobs:
     - name: Checkout dependencies
       run: |
         source "$INIT_ENV"
-        git clone -b ${{ steps.determine-base-branch.outputs.git_branch }} --depth 1 git@github.com:SaikrishnaBairamoni/carma-msgs-test.git src/CARMAMsgs
+        git clone -b ${{ steps.determine-base-branch.outputs.git_branch }} --depth 1 https://github.com/SaikrishnaBairamoni/carma-msgs-test.git src/CARMAMsgs
     - name: Build ROS2
       run: |
         source "$INIT_ENV"
